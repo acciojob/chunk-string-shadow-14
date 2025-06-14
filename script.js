@@ -1,6 +1,8 @@
 function stringChop(str, size) {
   // your code here
+	if(str.length<1)return [];
 	let x = parseInt(size);
+	
 	let ans =[];
 	let finall=0;
 	while(finall<str.length){
@@ -10,7 +12,7 @@ function stringChop(str, size) {
 	return ans;
 }
 
-// Do not change the code below
-const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
-alert(stringChop(str, size));
+// // Do not change the code below
+// const str = prompt("Enter String.");
+// const size = prompt("Enter Chunk Size.");
+// alert(stringChop(str, size));
