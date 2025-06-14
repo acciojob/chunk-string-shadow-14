@@ -1,10 +1,11 @@
 function stringChop(str, size) {
   // your code here
+	let x = parseInt(size);
 	let ans =[];
 	let finall=0;
 	while(finall<str.length){
-		ans.push(str.slice(finall,Math.min(finall+size,str.length)));
-		final+=size;
+		ans.push(str.slice(finall,Math.min(finall+x,str.length)));
+		finall+=x;
 	}
 	return ans;
 }
